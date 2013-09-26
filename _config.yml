@@ -1,7 +1,7 @@
 coding: UTF-8
 title:            Aneutra.org
 description:      Blog d'un libriste :)
-disqus_shortname:  pakdekro
+disqus_shortname: aneutra
 #Comment out url when working locally to resolve base urls correctly
 url:              http://aneutra.org
 
