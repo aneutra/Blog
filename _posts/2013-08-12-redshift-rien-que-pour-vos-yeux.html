@@ -1,0 +1,47 @@
+---
+layout: post
+title: 'Redshift: rien que pour vos yeux'
+tags:
+- linux
+status: publish
+type: post
+published: true
+meta:
+  _yoast_wpseo_linkdex: '0'
+  _edit_last: '1'
+  _yoast_wpseo_focuskw: ''
+  _yoast_wpseo_title: ''
+  _yoast_wpseo_metadesc: ''
+  _yoast_wpseo_meta-robots-noindex: '0'
+  _yoast_wpseo_meta-robots-nofollow: '0'
+  _yoast_wpseo_meta-robots-adv: none
+  _yoast_wpseo_canonical: ''
+  _yoast_wpseo_redirect: ''
+  _yoast_wpseo_opengraph-description: ''
+  _yoast_wpseo_google-plus-description: ''
+  _yoast_wpseo_metakeywords: ''
+  _yoast_wpseo_sitemap-include: '-'
+  _yoast_wpseo_sitemap-prio: '-'
+  _sd_is_markdown: ''
+  _wp_rp_extracted_image_url: http://pakdekro.org/wp-content/uploads/2013/03/Petites-flammes-d-interieur_imagePanoramique500_220-150x150.jpg
+  _wp_rp_extracted_image_url_full: http://pakdekro.org/wp-content/uploads/2013/03/Petites-flammes-d-interieur_imagePanoramique500_220.jpg
+  _wpas_skip_2314477: '1'
+  _wpas_skip_2314486: '1'
+---
+Redshift est un petit programme qui va changer la température de couleur de votre écran suivant le moment de la journée (jour/soirée/nuit/matin) afin de reposer vos yeux déjà bien attaqués. C'est très pratique pour ceux qui, comme moi, passent de nombreuses heures de la journée et de la nuit à geeker, lire et écrire des conneries.<br />
+<br />
+Sous archlinux, l'installation se fait comme d'hab' :
+<blockquote>pacman -S redshift</blockquote>
+Puis il suffit de lancer le programme avec cette commande :
+<blockquote>redshift -l 47.9:1.9 -t 5700:3600 -g 0.8 -m Randr -v</blockquote>
+où -l indique <strong>vos coordonnées géographiques</strong>, -t le <strong>maximumum:minimum de la température des couleurs de votre écran</strong>, -g <strong>la correction gamma à appliquer</strong>, -m <strong>la méthode de rendu</strong> et -v <strong>le mode verbeux</strong>.<br /><br />
+
+Petite explication concernant la température:<br /><br />
+
+La température de couleur permet de déterminer la température (effective ou « virtuelle ») d'une source de lumière à partir de sa couleur. Elle se mesure en kelvins (unité du Système international, et dont le symbole est : (K). <a href="http://fr.wikipedia.org/wiki/Temperature_de_couleur">Wikipedia.</a><br /><br />
+
+Elle varie du rouge (faible température) au bleu (température élevée). Redshift adapte virtuellement la température de votre écran à la température de la source lumineuse que vous utilisez (en journée la lumière du soleil, entre 5400 et 6100k, et la nuit une lampe autour de 3000 et 4000k) ce qui permet d'être dans un environnement lumineux bien plus agréable.<br />
+<br />
+Un must have.<br /><br />
+
+<a href="http://jonls.dk/redshift/">Chez le développeur. </a>

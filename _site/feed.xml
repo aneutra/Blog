@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Aneutra.org</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://aneutra.org/feed.xml" />
+<link rel="alternate" type="text/html" href="http://aneutra.org" />
+<updated>2013-09-26T22:55:34+02:00</updated>
+<id>http://aneutra.org/</id>
+<author>
+  <name>Aneutra</name>
+  <uri>http://aneutra.org/</uri>
+  <email>alex.neutra@gmail.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Ubuntu et les problèmes logiciels détectés]]></title>
+  <link>http://aneutra.org/ubuntu-et-les-probl%C3%A8mes-logiciels-d%C3%A9tect%C3%A9s</link>
+  <id>http://aneutra.org/ubuntu-et-les-problèmes-logiciels-détectés</id>
+  <published>2013-09-25T00:00:00+02:00</published>
+  <updated>2013-09-25T00:00:00+02:00</updated>
+  <author>
+    <name>Aneutra</name>
+    <uri>http://aneutra.org</uri>
+    <email>alex.neutra@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Je suis repassé sur Ubuntu pour voir un peu l’évolution depuis ma dernière utilisation (je n’y ai pas touché depuis le passage à unity, grosso-modo).&lt;br /&gt;
+Déjà je dois dire que cette distribution est plutôt bien foutue, contre toute attente. Prise en main ultra simple, interface graphique tape à l’œil, tout est plutôt bien intégré… Je déplore un peu le fait qu’Amazon soit présent dés l’installation, faisant vraiment penser à ces logiciels merdiques installés de base sur le Windows présent sur les pc’s achetés en grande surface. &lt;br /&gt;
+Bref, globalement je ne suis pas mécontent de cette distro pour le moment. Néanmoins je repasserai sûrement à une distribution plus &lt;em&gt;hardcore&lt;/em&gt; un jour ou l’autre. Quand ça “juste marche”, je m’ennuie.&lt;/p&gt;
+
+&lt;p&gt;Un petit problème néanmoins, rapidement rencontré, c’est celui des fenêtres “Problème logiciel détecté” qui apparaissent parfois sans crier gare et sans souci apparent. L’astuce pour les désactiver c’est d’aller bidouiller dans le fichier &lt;em&gt;/etc/default/apport”&lt;/em&gt; et de passer la variable &lt;em&gt;enabled&lt;/em&gt; à 0. Au reboot il n’y paraîtra plus.&lt;/p&gt;
+
+&lt;p&gt;Simple as fuck.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://aneutra.org/ubuntu-et-les-probl%C3%A8mes-logiciels-d%C3%A9tect%C3%A9s&quot;&gt;Ubuntu et les problèmes logiciels détectés&lt;/a&gt; was originally published by Aneutra at &lt;a href=&quot;http://aneutra.org&quot;&gt;Aneutra.org&lt;/a&gt; on September 25, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Un client jabber en mode console]]></title>
+  <link>http://aneutra.org/un-client-jabber-en-mode-console</link>
+  <id>http://aneutra.org/un-client-jabber-en-mode-console</id>
+  <published>2013-08-25T00:00:00+02:00</published>
+  <updated>2013-08-25T00:00:00+02:00</updated>
+  <author>
+    <name>Aneutra</name>
+    <uri>http://aneutra.org</uri>
+    <email>alex.neutra@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;J’utilise très souvent Jabber et pour cause, ma copine l’utilise aussi pour communiquer (comme quoi, ne vous inquiétez pas, tout n’est pas perdu). Pour avoir l’air d’un vrai puriste geek linuxien j’utilise bien évidemment un client en mode console: mcabber.  &lt;/p&gt;
+
+&lt;h2 id=&quot;prsentation&quot;&gt;Présentation:&lt;/h2&gt;
+
+&lt;p&gt;mcabber est un client jabber - et uniquement jabber - qui s’utilise en console - et uniquement en console - simple à configurer, personnalisable et simple à utiliser. Pour ce dernier point, c’est en partant du principe que vous êtes habitué aux applications consoles, puisque ce n’est pas forcément très intuitif pour les adeptes du clickodrome.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://mcabber.com/screenshots/mcabber20060403.png&quot; alt=&quot;&quot; /&gt;  &lt;/p&gt;
+
+&lt;p&gt;De base, le logiciel ressemble à peu prés à ça. Austère ? On ne peut pas le nier. L’écran est partagé en 4 zones ayant chacune une fonction bien définie : nous voyons à gauche la liste des contacts, a droite la conversation avec le contact sélectionné, puis en bas un buffer et encore en dessous la zone de saisie de texte.  &lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation:&lt;/h2&gt;
+
+&lt;p&gt;Sous archlinux l’installation est simple, il suffira d’un&lt;br /&gt;
+&amp;gt;pacman -S mcabber&lt;br /&gt;
+&amp;gt;cp /usr/share/mcabber/exemple/mcabberrc /home/user/.mcabberrc&lt;/p&gt;
+
+&lt;p&gt;Il vous faudra ensuite éditer le fichier de configuration .mcabberrc et y mettre vos informations de connexion aux endroits qui vont bien (les quelques premières lignes, ne vous inquiétez pas le fichier est bien documenté).&lt;/p&gt;
+
+&lt;h2 id=&quot;utilisation&quot;&gt;Utilisation:&lt;/h2&gt;
+
+&lt;p&gt;Après avoir édité le fichier de configuration il vous suffit de lancer le logiciel en tapant mcabber dans une console, ce qui aura pour effet de vous connecter. Il ne vous reste plus qu’à utiliser les touches “page précédente / page suivante” pour naviguer dans votre liste de contacts et parler.&lt;/p&gt;
+
+&lt;h2 id=&quot;petit-tips-bonus&quot;&gt;Petit tips bonus:&lt;/h2&gt;
+
+&lt;p&gt;Pour rendre la chose un peu moins moche, vous pouvez changer les couleurs en modifiant ces quelques lignes dans votre fichier de configuration:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;set color_background = 234&lt;br /&gt;
+set color_general = 244&lt;br /&gt;
+set color_info = 240&lt;br /&gt;
+set color_msgin = 166&lt;br /&gt;
+set color_msgout = 64&lt;br /&gt;
+set color_msghl = 136&lt;br /&gt;
+set color_bgstatus = 235&lt;br /&gt;
+set color_status = 166&lt;br /&gt;
+set color_roster = 240&lt;br /&gt;
+set color_bgrostersel = 235&lt;br /&gt;
+set color_rostersel = 166&lt;br /&gt;
+set color_rosterselmsg = 136&lt;br /&gt;
+set color_rosternewmsg = 13&lt;/p&gt;
+&lt;/blockquote&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://aneutra.org/un-client-jabber-en-mode-console&quot;&gt;Un client jabber en mode console&lt;/a&gt; was originally published by Aneutra at &lt;a href=&quot;http://aneutra.org&quot;&gt;Aneutra.org&lt;/a&gt; on August 25, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[la cigarette electronique]]></title>
+  <link>http://aneutra.org/la-cigarette-electronique</link>
+  <id>http://aneutra.org/la-cigarette-electronique</id>
+  <published>2013-08-13T00:00:00+02:00</published>
+  <updated>2013-08-13T00:00:00+02:00</updated>
+  <author>
+    <name>Aneutra</name>
+    <uri>http://aneutra.org</uri>
+    <email>alex.neutra@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Fumeur depuis un an (des roulées principalement), l’idée de la cigarette electronique me titillait depuis déjà un petit bout de temps. C’est en lisant le forum d’hardware.fr que j’ai voulu définitivement y passer. Pour plusieurs raisons.&lt;/p&gt;
+
+&lt;p&gt;Santé: l’electronique est beaucoup moins nocive que la cigarette normale (en réalité on n’en sait rien pour le moment, mais il n’y a pas 4000 produits inconnus dans l’electronique donc on peut penser que le risque est bien moindre).&lt;/p&gt;
+
+&lt;p&gt;Goût: bien que d’un tabac à l’autre le goût soit différent ce n’est tout de même pas aussi flagrant que de passer d’une saveur pomme à cerise. Et moi je veux un cancer à la pomme.&lt;/p&gt;
+
+&lt;p&gt;Le côté bidouilleur: c’est ce qui m’a le plus marqué en lisant HFR, il existe des tonnes de clearomiseurs, atomiseurs, batteries… on peut modder, et moi l’idée de modder ma clope ça me fait sourire. En plus le chargeur est USB donc ça fait geeky &lt;em&gt;t’vois&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comment qu’ça marche ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Le bouzin est séparé en deux parties distinctes: le clearomiseur et la batterie. Le clearomiseur est la partie où je mets le liquide, qui contient aussi une résistance qui va faire chauffer ce liquide et le transformer en vapeur. La batterie c’est… une batterie.&lt;/p&gt;
+
+&lt;p&gt;Pour ce qui est du clearomiseur j’ai personnelement opté pour un ViVi Nova. Oui, on se rend assez vite compte que les noms et références dans le monde de la cigarette electronique sont au mieux débiles (magasin taklope, marque clopinette…) au pire compliqués (“j’ai du dry hit au niveau du drip tip de mon kayfun V2”). La batterie est de la marque CleanSmoke.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.vapcig.fr/wp-content/uploads/2012/07/clearomizer_vivi-nova-tank-v2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Je n’expliquerai pas le principe plus que ça puisque des miyards de pages existent déjà sur le sujet.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Content, pas content ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Depuis hier je n’ai fumé que deux vrais cigarettes au lieu de ma quinzaine habituelle. J’ai pris deux eliquides de 10mL, un à la framboise et l’autre au rhum, contenant chacun 6mg de nicotine. J’ai d’ailleurs mélangé un peu des deux et le résultat est pas mauvais au niveau du gout. Maintenant, je dois dire que j’ai aussi un peu de mal à avaler la fumée produite mais c’est surement le manque d’habitude ou le fait de trop chercher à faire comme s’il s’agissait d’une véritable cigarette…&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://aneutra.org/la-cigarette-electronique&quot;&gt;la cigarette electronique&lt;/a&gt; was originally published by Aneutra at &lt;a href=&quot;http://aneutra.org&quot;&gt;Aneutra.org&lt;/a&gt; on August 13, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Redshift: rien que pour vos yeux]]></title>
+  <link>http://aneutra.org/redshift-rien-que-pour-vos-yeux</link>
+  <id>http://aneutra.org/redshift-rien-que-pour-vos-yeux</id>
+  <published>2013-08-12T00:00:00+02:00</published>
+  <updated>2013-08-12T00:00:00+02:00</updated>
+  <author>
+    <name>Aneutra</name>
+    <uri>http://aneutra.org</uri>
+    <email>alex.neutra@gmail.com</email>
+  </author>
+  <content type="html">Redshift est un petit programme qui va changer la température de couleur de votre écran suivant le moment de la journée (jour/soirée/nuit/matin) afin de reposer vos yeux déjà bien attaqués. C'est très pratique pour ceux qui, comme moi, passent de nombreuses heures de la journée et de la nuit à geeker, lire et écrire des conneries.&lt;br /&gt;
+&lt;br /&gt;
+Sous archlinux, l'installation se fait comme d'hab' :
+&lt;blockquote&gt;pacman -S redshift&lt;/blockquote&gt;
+Puis il suffit de lancer le programme avec cette commande :
+&lt;blockquote&gt;redshift -l 47.9:1.9 -t 5700:3600 -g 0.8 -m Randr -v&lt;/blockquote&gt;
+où -l indique &lt;strong&gt;vos coordonnées géographiques&lt;/strong&gt;, -t le &lt;strong&gt;maximumum:minimum de la température des couleurs de votre écran&lt;/strong&gt;, -g &lt;strong&gt;la correction gamma à appliquer&lt;/strong&gt;, -m &lt;strong&gt;la méthode de rendu&lt;/strong&gt; et -v &lt;strong&gt;le mode verbeux&lt;/strong&gt;.&lt;br /&gt;&lt;br /&gt;
+
+Petite explication concernant la température:&lt;br /&gt;&lt;br /&gt;
+
+La température de couleur permet de déterminer la température (effective ou « virtuelle ») d'une source de lumière à partir de sa couleur. Elle se mesure en kelvins (unité du Système international, et dont le symbole est : (K). &lt;a href=&quot;http://fr.wikipedia.org/wiki/Temperature_de_couleur&quot;&gt;Wikipedia.&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+
+Elle varie du rouge (faible température) au bleu (température élevée). Redshift adapte virtuellement la température de votre écran à la température de la source lumineuse que vous utilisez (en journée la lumière du soleil, entre 5400 et 6100k, et la nuit une lampe autour de 3000 et 4000k) ce qui permet d'être dans un environnement lumineux bien plus agréable.&lt;br /&gt;
+&lt;br /&gt;
+Un must have.&lt;br /&gt;&lt;br /&gt;
+
+&lt;a href=&quot;http://jonls.dk/redshift/&quot;&gt;Chez le développeur. &lt;/a&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://aneutra.org/redshift-rien-que-pour-vos-yeux&quot;&gt;Redshift: rien que pour vos yeux&lt;/a&gt; was originally published by Aneutra at &lt;a href=&quot;http://aneutra.org&quot;&gt;Aneutra.org&lt;/a&gt; on August 12, 2013.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Premier post !]]></title>
+  <link>http://aneutra.org/premier-post</link>
+  <id>http://aneutra.org/premier-post</id>
+  <published>2013-08-04T00:00:00+02:00</published>
+  <updated>2013-08-04T00:00:00+02:00</updated>
+  <author>
+    <name>Aneutra</name>
+    <uri>http://aneutra.org</uri>
+    <email>alex.neutra@gmail.com</email>
+  </author>
+  <content type="html">&lt;p&gt;Bienvenu sur le blog d’un passionné d’informatique, et plus précisément d’informatique libre. La ligne éditoriale de ce blog ? J’avoue la chercher un peu moi-même. Oh, bien sûr, il y’aura du tech parce que c’est ma passion, sûrement des avis sur l’actu parce que ça me semble important, et puis… Peut-être un peu de bouffe aussi, parce que c’est mon boulot d’en faire pour avoir de quoi acheter la mienne.  &lt;/p&gt;
+
+&lt;p&gt;Côté technique c’est assez simple: j’utilise le moteur de blog &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, et j’héberge ce blog grâce à &lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt;. Le thème est celui de &lt;a href=&quot;https://github.com/mmistakes/hpstr-jekyll-theme&quot;&gt;hpstr&lt;/a&gt; que j’ai trouvé vraiment sympa graphiquement, je compte m’en servir comme base et effectuer quelques customisations si j’en éprouve le besoin.&lt;/p&gt;
+
+&lt;p&gt;Bref, vous savez tout, maintenant il ne me reste plus qu’à écrire.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://aneutra.org/premier-post&quot;&gt;Premier post !&lt;/a&gt; was originally published by Aneutra at &lt;a href=&quot;http://aneutra.org&quot;&gt;Aneutra.org&lt;/a&gt; on August 04, 2013.&lt;/p&gt;</content>
+</entry>
+
+</feed>

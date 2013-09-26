@@ -1,0 +1,13 @@
+---
+
+layout: post
+
+title: Premier post !
+
+---
+
+Bienvenu sur le blog d'un passionné d'informatique, et plus précisemment d'informatique libre. La ligne éditoriale de ce blog ? J'avoue la chercher un peu moi-même. Oh, bien sûr, il y'aura du tech parce que c'est ma passion, sûrement des avis sur l'actu parce que ça me semble important, et puis... Peut-être un peu de bouffe aussi, parce que c'est mon boulot d'en faire pour avoir de quoi acheter la mienne.  
+
+Côté technique c'est assez simple: j'utilise le moteur de blog [Jekyll](http://jekyllrb.com/), et j'héberge ce blog grâce à [GitHub](http://github.com). Le thème est celui de [hpstr](https://github.com/mmistakes/hpstr-jekyll-theme) que j'ai trouvé vraiment sympa graphiquement, je compte m'en servir comme base et effectuer quelques customisations si j'en éprouve le besoin.
+
+Bref, vous savez tout, maintenant il ne me reste plus qu'à écrire.

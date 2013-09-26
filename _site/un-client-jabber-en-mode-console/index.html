@@ -1,0 +1,211 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Un client jabber en mode console &#8211; Aneutra.org</title>
+<meta name="description" content="Blog d'un libriste :)">
+<meta name="keywords" content="console, jabber, linux, logiciel">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Un client jabber en mode console">
+<meta property="og:description" content="Blog d'un libriste :)">
+<meta property="og:url" content="http://aneutra.org/un-client-jabber-en-mode-console">
+<meta property="og:site_name" content="Aneutra.org">
+
+
+
+
+
+<link rel="canonical" href="http://aneutra.org/un-client-jabber-en-mode-console">
+<link href="http://aneutra.org/feed.xml" type="application/atom+xml" rel="alternate" title="Aneutra.org Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://aneutra.org/assets/css/main.min.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://aneutra.org/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://aneutra.org/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://aneutra.org/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://aneutra.org/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://aneutra.org/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://aneutra.org/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://aneutra.org/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body id="post"  itemscope itemtype="http://schema.org/WebPage">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://aneutra.org">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://aneutra.org/images/avatar.jpg" alt="Aneutra photo" class="author-photo">
+					<h4>Aneutra</h4>
+					<p>Un boulanger-informatico-ninja.</p>
+				</li>
+				<li><a href="http://aneutra.org/about/">Learn More</a></li>
+				<li>
+					<a href="mailto:alex.neutra@gmail.com"><i class="icon-envelope"></i> Email</a>
+				</li>
+				
+				
+				
+				
+				<li>
+					<a href="http://github.com/aneutra"><i class="icon-github"></i> GitHub</a>
+				</li>
+				
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://aneutra.org/archive/">All Posts</a></li>
+				<li><a href="http://aneutra.org/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+
+<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+  <article class="hentry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title" itemprop="name"><a href="/un-client-jabber-en-mode-console" rel="bookmark" title="Un client jabber en mode console" itemprop="url">Un client jabber en mode console</a></h1>
+        
+        <h2>August 25, 2013</h2>
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content" itemprop="description">
+      <p>J’utilise très souvent Jabber et pour cause, ma copine l’utilise aussi pour communiquer (comme quoi, ne vous inquiétez pas, tout n’est pas perdu). Pour avoir l’air d’un vrai puriste geek linuxien j’utilise bien évidemment un client en mode console: mcabber.  </p>
+
+<h2 id="prsentation">Présentation:</h2>
+
+<p>mcabber est un client jabber - et uniquement jabber - qui s’utilise en console - et uniquement en console - simple à configurer, personnalisable et simple à utiliser. Pour ce dernier point, c’est en partant du principe que vous êtes habitué aux applications consoles, puisque ce n’est pas forcément très intuitif pour les adeptes du clickodrome.</p>
+
+<p><img src="http://mcabber.com/screenshots/mcabber20060403.png" alt="" />  </p>
+
+<p>De base, le logiciel ressemble à peu prés à ça. Austère ? On ne peut pas le nier. L’écran est partagé en 4 zones ayant chacune une fonction bien définie : nous voyons à gauche la liste des contacts, a droite la conversation avec le contact sélectionné, puis en bas un buffer et encore en dessous la zone de saisie de texte.  </p>
+
+<h2 id="installation">Installation:</h2>
+
+<p>Sous archlinux l’installation est simple, il suffira d’un<br />
+&gt;pacman -S mcabber<br />
+&gt;cp /usr/share/mcabber/exemple/mcabberrc /home/user/.mcabberrc</p>
+
+<p>Il vous faudra ensuite éditer le fichier de configuration .mcabberrc et y mettre vos informations de connexion aux endroits qui vont bien (les quelques premières lignes, ne vous inquiétez pas le fichier est bien documenté).</p>
+
+<h2 id="utilisation">Utilisation:</h2>
+
+<p>Après avoir édité le fichier de configuration il vous suffit de lancer le logiciel en tapant mcabber dans une console, ce qui aura pour effet de vous connecter. Il ne vous reste plus qu’à utiliser les touches “page précédente / page suivante” pour naviguer dans votre liste de contacts et parler.</p>
+
+<h2 id="petit-tips-bonus">Petit tips bonus:</h2>
+
+<p>Pour rendre la chose un peu moins moche, vous pouvez changer les couleurs en modifiant ces quelques lignes dans votre fichier de configuration:</p>
+
+<blockquote>
+  <p>set color_background = 234<br />
+set color_general = 244<br />
+set color_info = 240<br />
+set color_msgin = 166<br />
+set color_msgout = 64<br />
+set color_msghl = 136<br />
+set color_bgstatus = 235<br />
+set color_status = 166<br />
+set color_roster = 240<br />
+set color_bgrostersel = 235<br />
+set color_rostersel = 166<br />
+set color_rosterselmsg = 136<br />
+set color_rosternewmsg = 13</p>
+</blockquote>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://aneutra.org/tags/index.html#console" title="Pages tagged console" rel="tag" class="tag">console</a><a href="http://aneutra.org/tags/index.html#jabber" title="Pages tagged jabber" rel="tag" class="tag">jabber</a><a href="http://aneutra.org/tags/index.html#linux" title="Pages tagged linux" rel="tag" class="tag">linux</a><a href="http://aneutra.org/tags/index.html#logiciel" title="Pages tagged logiciel" rel="tag" class="tag">logiciel</a></span>
+        <span><a href="http://aneutra.org/un-client-jabber-en-mode-console" rel="bookmark" title="Un client jabber en mode console" itemprop="url">Un client jabber en mode console</a> was published on <span class="entry-date date published updated"><time datetime="2013-08-25T00:00:00+02:00" itemprop="datePublished">August 25, 2013</time></span></span>
+        
+        <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn"><a href="http://aneutra.org/about" title="About Aneutra" itemprop="url">Aneutra</a></span></span>
+        
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    
+    <div class="read-more">
+      
+        <div class="read-more-header">
+          <a href="http://aneutra.org/la-cigarette-electronique" class="read-more-btn">Read More</a>
+        </div><!-- /.read-more-header -->
+        <div class="read-more-content">
+          <h3><a href="http://aneutra.org/ubuntu-et-les-probl%C3%A8mes-logiciels-d%C3%A9tect%C3%A9s" title="Ubuntu et les problèmes logiciels détectés">Ubuntu et les problèmes logiciels détectés</a></h3>
+          <p>Je suis repassé sur Ubuntu pour voir un peu l'évolution depuis ma dernière utilisation (je n'y ai pas touché depuis le passage à unity, g...&hellip; <a href="http://aneutra.org/ubuntu-et-les-probl%C3%A8mes-logiciels-d%C3%A9tect%C3%A9s">Continue reading</a></p>
+        </div><!-- /.read-more-content -->
+      
+      <div class="read-more-list">
+        
+          <div class="list-item">
+            <h4><a href="http://aneutra.org/la-cigarette-electronique" title="la cigarette electronique">la cigarette electronique</a></h4>
+            <span>Published on August 13, 2013</span>
+          </div><!-- /.list-item -->
+        
+          <div class="list-item">
+            <h4><a href="http://aneutra.org/redshift-rien-que-pour-vos-yeux" title="Redshift: rien que pour vos yeux">Redshift: rien que pour vos yeux</a></h4>
+            <span>Published on August 12, 2013</span>
+          </div><!-- /.list-item -->
+        
+      </div><!-- /.read-more-list -->
+      
+    </div><!-- /.read-more -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2013 Aneutra. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/">HPSTR Theme</a>.</span>
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://aneutra.org/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://aneutra.org/assets/js/scripts.min.js"></script>
+
+	        
+
+</body>
+</html>
